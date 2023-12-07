@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .message-container {
+      text-align: center;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      background-color: #f5f5dc; /* creme color */
+      position: relative;
+    }
+
+    .success-message {
+      color: #28a745;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .emoji {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    .bottom-link {
+      margin-top: 20px; /* Adjust the margin to control the spacing between the message and the link */
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #f5f5dc; /* creme color */
+      color: #343a40; /* dark color for better contrast */
+      text-decoration: none;
+      border: 1px solid #343a40; /* dark border color */
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .bottom-link:hover {
+      background-color: #dcdcdc; /* slightly darker color on hover */
+    }
+  </style>
+  <title>Submission Confirmation</title>
+</head>
+<body>
+
+<div class="container">
+  <div class="message-container">
+    <div class="emoji">&#x1F60D;</div>
+    <div class="success-message">
+      Your request has been successfully submitted. <br> Thank you for contacting us!
+    </div>
+    <a href="http://127.0.0.1:5500/day.html#" class="bottom-link">Close</a>
+  </div>
+</div>
+
+</body>
+</html>

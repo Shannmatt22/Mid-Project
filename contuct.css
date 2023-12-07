@@ -1,0 +1,66 @@
+/* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Use a more flexible font stack */
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-image: url('https://initiate.alphacoders.com/images/133/stretched-1920-1080-1337526.png?947');
+}
+
+.merah1 {
+    margin-right: 3%;
+}
+
+.container {
+    background-color: #f5f5f5; /* Updated color to a light cream */
+    padding: 30px;
+    margin-top: 5%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  h2 {
+    color: #dc3545; /* Updated color to red */
+  }
+
+  label {
+    font-weight: bold;
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  textarea.form-control {
+    resize: vertical;
+  }
+
+  input[type="button"] {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="button"]:hover {
+    background-color: #45a049;
+}
+
+a {
+    margin-top: 10px;
+    display: inline-block;
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

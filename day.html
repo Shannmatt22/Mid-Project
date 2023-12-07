@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="en">
+ <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Daytrans</title>
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="day.css">
+<!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+ </head>
+ <body>
+    <header class="navbar fixed-top bg-pink">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <img src="merah.png" width="115px" class="merah1">
+          <div  class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+                <img src="merah.png" width="115px" class="merah">
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                 <a class="nav-link active" aria-current="page" href="http://127.0.0.1:5501/day.html">Home</a>
+                </li>
+                <li class="nav-item">
+                 <a class="nav-link" href="http://127.0.0.1:5501/card.html">Bio</a>
+                </li>
+                <li class="nav-item dropdown">
+                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Lainnya
+                 </a>
+                 <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="http://127.0.0.1:5501/Contuct.html">Contuct Us</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                 </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div> 
+    </header>
+    <nav>
+      <div class="wrapper">
+        <i id="left" class="fa-solid fa-angle-left"></i>
+        <div class="carousel">
+          <img src="https://www.daytrans.co.id/uploads/slider/slider20231106124548.web-openn-harga-2-1.jpg" alt="img" draggable="false">
+          <img src="https://www.daytrans.co.id/uploads/slider/slider20231027131350.banner-daytrans-buah-batu-min.png" alt="img" draggable="false">
+          <img src="https://www.daytrans.co.id/uploads/slider/slider20230925154803.we-re-open-12.jpg" alt="img" draggable="false">
+          <img src="https://www.daytrans.co.id/uploads/slider/slider20230901100849.abnner-ke-bekasi-1.jpg" alt="img" draggable="false">
+          <img src="https://www.daytrans.co.id/uploads/slider/slider20230901100836.banner-grogolll-1.jpg" alt="img" draggable="false">
+          <img src="https://www.daytrans.co.id/uploads/slider/slider20230530113120.3.jpg" alt="img" draggable="false">
+          <img src="https://www.daytrans.co.id/uploads/slider/slider20230530113108.2.jpg" alt="img" draggable="false">
+          <img src="https://www.daytrans.co.id/uploads/slider/slider20230530113040.1.jpg" alt="img" draggable="false">
+          <img src="https://www.daytrans.co.id/uploads/slider/slider20230209154208.1554c956-1a6b-4bcc-81c0-474313d17b47.jpeg" alt="img" draggable="false">
+        </div>
+        <i id="right" class="fa-solid fa-angle-right"></i>
+      </div>
+        <div class="uy">
+        <div class="booking">
+            <div class="inp">
+                <label for="tanggal">Tanggal Keberangkatan</label>
+                <input type="date" id="tanggal">
+            </div>
+            <div class="inp">
+                <label for="keberangkatan">Keberangkatan</label>
+                <select>
+                    <option>Pilih Keberangkatan</option>
+                    <option class="kk" value="unai">UNAI</option>
+                    <option class="kk" value="bandung">Bandung</option>
+                    <option class="kk" value="jakarta">Jakarta</option>
+                    <option class="kk" value="bekasi">Bekasi</option>
+                </select> 
+            </div>
+            <div class="inp">
+                <label for="cars">Tujuan</label>
+                <select>
+                    <option>Pilih Tujuan</option>
+                    <option class="kk" value="surga">SURGA</option>
+                    <option class="kk" value="neraka">neraka :(</option>
+                </select>
+            </div>
+            <div class="inp">
+              <label for="cars">Penumpang</label>
+              <select>
+                  <option class="kk" value="orang">1 orang</option>
+                  <option class="kk" value="orang">2 orang</option>
+                  <option class="kk" value="orang">3 orang</option>
+                  <option class="kk" value="orang">4 orang</option>
+                  <option class="kk" value="orang">5 orang</option>
+                  <option class="kk" value="orang">6 orang</option>
+                  <option class="kk" value="orang">7 orang</option>
+              </select>
+          </div>
+          <div>
+            <button class="styled-button">Cari</button>
+          </div>
+        </div>
+        </div>
+    </nav>
+    <main>
+      <div>
+      <h1 class="kata">Jarak antar kota terasa<br>#JadilebihDekat dengan</h1>
+      <div class="col-lg-5 bg-title px-3 mb-1">
+        <p class="px-3 fs-1 text">
+          DayTrans
+        </p>
+      </div>
+      </div>
+        <div class="row">
+          <div class="col-12 col-lg-4 px-3 mb-4">
+            <div class="card bg-benefit rounded h-100 p-4">
+              <div class="row mb-3">
+                <div class="col-6">
+                  <img src="https://www.daytrans.co.id/css/daytrans/images/icon/benefit/affordable%20price.png" class="img-fluid bg-white rounded-circle" width="80px" alt="">
+                </div>
+                <div class="col-6 text-right">
+                  <img src="https://www.daytrans.co.id/css/daytrans/images/bg/bg-pattern-pink.png" class="img-fluid" alt="">
+                </div>
+              </div>
+              <p class="color-primary font-bold fs-26">
+                Affordable
+              </p>
+              <p class="content-benefit text-muted fs-14">
+                Harga tiket terjangkau &amp; banyak promo menarik yang ditawarkan. Tersedia banyak jadwal keberangkatan.
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 px-3 mb-4">
+            <div class="card bg-benefit rounded h-100 p-4">
+              <div class="row mb-3">
+                <div class="col-6">
+                  <img src="https://www.daytrans.co.id/css/daytrans/images/icon/benefit/ergonomis.png" class="img-fluid bg-white rounded-circle" width="80px" alt="">
+                </div>
+                <div class="col-6 text-right">
+                  <img src="https://www.daytrans.co.id/css/daytrans/images/bg/bg-pattern-pink.png" class="img-fluid" alt="">
+                </div>
+              </div>
+              <p class="color-primary font-bold fs-26">
+                Ergonomis
+              </p>
+              <p class="content-benefit text-muted fs-14">
+                Armada bersih, reclining seat dan jarak antar kaki yang nyaman. Tentukan sendiri tempat duduk sesuai preferensi.
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 px-3 mb-4">
+            <div class="card bg-benefit rounded h-100 p-4">
+              <div class="row mb-3">
+                <div class="col-6">
+                  <img src="https://www.daytrans.co.id/css/daytrans/images/icon/benefit/GPS%20tracking%20icon.png" class="img-fluid bg-white rounded-circle" width="80px" alt="">
+                </div>
+                <div class="col-6 text-right">
+                  <img src="https://www.daytrans.co.id/css/daytrans/images/bg/bg-pattern-pink.png" class="img-fluid" alt="">
+                </div>
+              </div>
+              <p class="color-primary font-bold fs-26">
+                GPS Tracking System
+              </p>
+              <p class="content-benefit text-muted fs-14">
+                Sistem yang memungkinkan Anda untuk mengatahui titik lokasi anda berada dan durasi tempuh perjalanan.
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 px-3 mb-4">
+            <div class="card bg-benefit rounded h-100 p-4">
+              <div class="row mb-3">
+                <div class="col-6">
+                  <img src="https://www.daytrans.co.id/css/daytrans/images/icon/benefit/icon%20pool.png" class="img-fluid bg-white rounded-circle" width="80px" alt="">
+                </div>
+                <div class="col-6 text-right">
+                  <img src="https://www.daytrans.co.id/css/daytrans/images/bg/bg-pattern-pink.png" class="img-fluid" alt="">
+                </div>
+              </div>
+              <p class="color-primary font-bold fs-26">
+                Pool to Pool
+              </p>
+              <p class="content-benefit text-muted fs-14">
+                Berangkat dan tiba di tujuan sesuai dengan counter DayTrans yang dipilih.
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 px-3 mb-4">
+            <div class="card bg-benefit rounded h-100 p-4">
+              <div class="row mb-3">
+                <div class="col-6">
+                  <img src="https://www.daytrans.co.id/css/daytrans/images/icon/benefit/CCTV.png" class="img-fluid bg-white rounded-circle" width="80px" alt="">
+                </div>
+                <div class="col-6 text-right">
+                  <img src="https://www.daytrans.co.id/css/daytrans/images/bg/bg-pattern-pink.png" class="img-fluid" alt="">
+                </div>
+              </div>
+              <p class="color-primary font-bold fs-26">
+                CCTV
+              </p>
+              <p class="content-benefit text-muted fs-14">
+                Dilengkapi dengan teknologi CCTV dalam setiap armada.
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 px-3 mb-4">
+            <div class="card bg-benefit rounded h-100 p-4">
+              <div class="row mb-3">
+                <div class="col-6">
+                  <img src="https://www.daytrans.co.id/css/daytrans/images/icon/benefit/CHSE%20certificate.png" class="img-fluid bg-white rounded-circle" width="80px" alt="">
+                </div>
+                <div class="col-6 text-right">
+                  <img src="https://www.daytrans.co.id/css/daytrans/images/bg/bg-pattern-pink.png" class="img-fluid" alt="">
+                </div>
+              </div>
+              <p class="color-primary font-bold fs-26">
+                CHSE Certified
+              </p>
+              <p class="content-benefit text-muted fs-14">
+                Tersertifikasi Cleanliness (kebersihan), Health (kesehatan), Safety (keamanan), dan Environment Sustainability (kelestarian lingkungan) oleh Kemenparekraf.
+              </p>
+            </div>
+          </div>
+        </div>      
+      </main>
+      <footer class="bg-red tether-element-attached-top tether-element-attached-center tether-target-attached-top tether-target-attached-center">
+        <div class="container mt-5">
+          <div class="col-12 mx-auto pb-5">
+            <div class="row">
+              <div class="col-lg-4 justify-content-center align-self-center">
+                <img class="img-fluid" src="https://www.daytrans.co.id/css/daytrans/images/icon/gadget.png" alt="">
+              </div>
+              <div class="col-lg-8 justify-content-center align-self-center">
+                <p class="text-center text-lg-left">
+                  <img src="https://www.daytrans.co.id/css/daytrans/images/icon/putih.png" class="img-fluid" width="200px" alt="">
+                </p>
+                <h3 class="font-weight-bold text-white text-center text-lg-left">
+                  Install aplikasi Daytrans di playstore
+                  <br>
+                  dan appstore Sekarang juga!
+                </h3>
+                <p class="fs-18 text-white text-center text-lg-left">
+                  Kemudahan saat memesan tiket dimanapun dan kapanpun.
+                </p>
+                <div class="mt-5 text-center text-lg-left">
+                  <img src="https://www.daytrans.co.id/css/daytrans/images/qr.png" class="img-fluid mr-lg-5 mb-2" width="150px">
+                  <span class="align-bottom mr-lg-5 mb-2">
+                    <a href="https://play.google.com/store/apps/details?id=com.trust.android.daytrans">
+                      <img src="https://www.daytrans.co.id/css/daytrans/images/playstorebtn.png" class="img-fluid bottom-align" width="200px">
+                    </a>
+                  </span>
+                  <span class="align-bottom mr-lg-5 mb-2">
+                    <a href="https://apps.apple.com/id/app/daytrans/id1518228268">
+                      <img src="https://www.daytrans.co.id/css/daytrans/images/appstorebtn.png" class="img-fluid bottom-align" width="200px">
+                    </a>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer class="snipcss-eflbS style-zNgJr" id="style-zNgJr">
+          <div class="container py-5">
+            <div class="col-12 mb-5 px-0">
+              <p class="text-center text-md-left">
+                <img src="https://www.daytrans.co.id/css/daytrans/images/icon/putih.png" class="img-fluid" width="200px">
+              </p>
+            </div>
+            <div class="row text-white text-center text-md-left mb-4">
+              <div class="col-12 col-lg-2 mb-3">
+                <p class="fs-20 font-weight-bold">
+                  Lainnya
+                </p>
+                <p class="fs-16">
+                  Shuttle
+                </p>
+                <p class="fs-16">
+                  <a href="https://www.daytrans.co.id/tentang" class="text-white">
+                    Tentang 
+                  </a>
+                </p>
+                <p class="fs-16">
+                  <a href="https://www.daytrans.co.id/bayar" class="text-white">
+                    Cara Bayar 
+                  </a>
+                </p>
+                <p class="fs-16">
+                  <a href="https://www.daytrans.co.id/kebijakan-privasi" class="text-white">
+                    Kebijakan Privasi
+                  </a>
+                </p>
+              </div>
+              <div class="col-12 col-lg-4 mb-3">
+                <p class="fs-20 font-weight-bold">
+                  Kontak
+                </p>
+                <p class="fs-16">
+                  <i class="fas fa-map-marker-alt pr-2">
+                  </i>
+                  Jl Deplu Raya No.43 Bintaro, Pesanggrahan Jakarta Selatan 12320
+                </p>
+                <p class="fs-16">
+                  <i class="fas fa-phone pr-2">
+                  </i>
+                  62 21 3029 6767
+                </p>
+                <p class="fs-16">
+                  <i class="fas fa-envelope pr-2">
+                  </i>
+                  callcentre@daytrans.co.id
+                </p>
+              </div>
+              <div class="col-12 col-lg-3 mb-3">
+                <p class="fs-20 font-weight-bold">
+                  Call Center
+                </p>
+                <p class="fs-16">
+                  <i class="fab fa-whatsapp pr-2">
+                  </i>
+                  08558556767
+                </p>
+                <p class="fs-20 font-weight-bold">
+                  Bantuan
+                </p>
+                <p class="fs-16">
+                  Syarat dan Ketentuan
+                </p>
+              </div>
+              <div class="col-12 col-lg-3 mb-3">
+                <p class="fs-20 font-weight-bold">
+                  Sosial Media
+                </p>
+                <p>
+                  <a target="blank_" href="https://www.instagram.com/daytrans.official/" class="text-white fs-16">
+                    <img class="img-fluid mr-2" width="25" src="https://www.daytrans.co.id/default/global/images/sosmed/instagram.png" alt="">
+                    Instagram
+                  </a>
+                </p>
+                <p>
+                  <a target="blank_" href="https://www.instagram.com/daytrans.official/" class="text-white fs-16">
+                    <img class="img-fluid mr-2" width="25" src="https://www.daytrans.co.id/default/global/images/sosmed/tiktok.png" alt="">
+                    Tiktok
+                  </a>
+                </p>
+              </div>
+            </div>
+            <div class="col-12 px-0 text-white">
+              <p class="text-center">
+                Copyright 2023 Daytrans
+              </p>
+            </div>
+          </div>
+        </footer>
+        
+      </footer>
+      
+      <script src="day.js" defer></script>   
+ </body>
+</html>
